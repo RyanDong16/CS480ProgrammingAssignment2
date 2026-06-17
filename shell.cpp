@@ -68,9 +68,7 @@ int main() {
         // If fork() returns a negative number, process creation failed
         if (pid < 0) {
             perror("fork failed");
-        } 
-        // If fork() returns 0, this code is running inside the child process
-
+        }
 
         // if fork() returns 0, code running inside child process
         else if (pid == 0) {
